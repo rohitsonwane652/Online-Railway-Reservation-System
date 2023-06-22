@@ -376,3 +376,6 @@
 2023-06-22 21:05:19,811 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
 2023-06-22 21:10:19,824 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
 2023-06-22 21:15:19,834 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 21:20:19,846 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 21:25:19,851 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 21:30:19,868 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
