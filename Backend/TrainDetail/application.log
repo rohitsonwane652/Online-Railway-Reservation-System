@@ -1,0 +1,378 @@
+2023-06-22 10:17:27,437 INFO  StartupInfoLogger:51 - [] Starting TrainDetailApplication using Java 17.0.6 with PID 18884 (G:\Online Railway Reservation System\Backend\TrainDetail\target\classes started by Rohit in G:\Online Railway Reservation System\Backend\TrainDetail)
+2023-06-22 10:17:27,452 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-06-22 10:17:27,583 INFO  DeferredLog:250 - [] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-22 10:17:27,583 INFO  DeferredLog:250 - [] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-22 10:17:29,452 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-22 10:17:29,774 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 308 ms. Found 2 MongoDB repository interfaces.
+2023-06-22 10:17:30,173 INFO  GenericScope:282 - [] BeanFactory id=22a72bcb-eeef-37b7-8817-118fd53f371e
+2023-06-22 10:17:31,192 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8081 (http)
+2023-06-22 10:17:31,215 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-06-22 10:17:31,216 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-22 10:17:31,393 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-06-22 10:17:31,395 INFO  ServletWebServerApplicationContext:291 - [] Root WebApplicationContext: initialization completed in 3809 ms
+2023-06-22 10:17:31,807 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@330a97ec, com.mongodb.Jep395RecordCodecProvider@7b40556a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-22 10:17:31,836 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=44543600}
+2023-06-22 10:17:32,154 WARN  OptionalLiveReloadServer:62 - [] Unable to start LiveReload server
+2023-06-22 10:17:33,786 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-06-22 10:17:34,156 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-22 10:17:34,306 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-06-22 10:17:34,432 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-06-22 10:17:34,454 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:17:34,534 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-06-22 10:17:34,535 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-06-22 10:17:34,536 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-06-22 10:17:34,537 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-06-22 10:17:34,538 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-06-22 10:17:34,539 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-06-22 10:17:34,539 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-06-22 10:17:35,439 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-06-22 10:17:35,450 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-06-22 10:17:35,456 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-22 10:17:35,481 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1687409255477 with initial instances count: 2
+2023-06-22 10:17:35,484 INFO  EurekaServiceRegistry:41 - [] Registering application TRAIN-DETAILS with eureka with status UP
+2023-06-22 10:17:35,486 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409255486, current=UP, previous=STARTING]
+2023-06-22 10:17:35,489 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:17:35,543 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-22 10:17:35,546 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8081
+2023-06-22 10:17:35,610 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:17:35,872 INFO  StartupInfoLogger:57 - [] Started TrainDetailApplication in 9.628 seconds (process running for 11.607)
+2023-06-22 10:19:08,809 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - [] Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-06-22 10:19:08,812 INFO  EurekaServiceRegistry:62 - [] Unregistering application TRAIN-DETAILS with eureka with status DOWN
+2023-06-22 10:19:08,812 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409348812, current=DOWN, previous=UP]
+2023-06-22 10:19:08,814 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:19:08,822 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:19:08,831 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2023-06-22 10:19:08,851 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...
+2023-06-22 10:19:11,858 INFO  DiscoveryClient:915 - [] Unregistering ...
+2023-06-22 10:19:12,064 INFO  DiscoveryClient:917 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - deregister  status: 200
+2023-06-22 10:19:12,075 INFO  DiscoveryClient:904 - [] Completed shut down of DiscoveryClient
+2023-06-22 10:19:12,430 INFO  StartupInfoLogger:51 - [] Starting TrainDetailApplication using Java 17.0.6 with PID 18884 (G:\Online Railway Reservation System\Backend\TrainDetail\target\classes started by Rohit in G:\Online Railway Reservation System\Backend\TrainDetail)
+2023-06-22 10:19:12,431 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-06-22 10:19:12,950 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-22 10:19:12,972 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 21 ms. Found 2 MongoDB repository interfaces.
+2023-06-22 10:19:13,079 INFO  GenericScope:282 - [] BeanFactory id=22a72bcb-eeef-37b7-8817-118fd53f371e
+2023-06-22 10:19:13,184 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8081 (http)
+2023-06-22 10:19:13,186 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-06-22 10:19:13,186 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-22 10:19:13,232 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-06-22 10:19:13,233 INFO  ServletWebServerApplicationContext:291 - [] Root WebApplicationContext: initialization completed in 799 ms
+2023-06-22 10:19:13,293 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@330a97ec, com.mongodb.Jep395RecordCodecProvider@7b40556a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-22 10:19:13,301 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6097400}
+2023-06-22 10:19:13,362 WARN  OptionalLiveReloadServer:62 - [] Unable to start LiveReload server
+2023-06-22 10:19:14,069 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-06-22 10:19:14,334 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-22 10:19:14,380 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-06-22 10:19:14,384 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-06-22 10:19:14,385 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:19:14,401 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-06-22 10:19:14,401 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-06-22 10:19:14,402 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-06-22 10:19:14,402 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-06-22 10:19:14,402 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-06-22 10:19:14,403 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-06-22 10:19:14,403 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-06-22 10:19:14,463 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-06-22 10:19:14,466 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-06-22 10:19:14,471 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-22 10:19:14,473 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1687409354473 with initial instances count: 4
+2023-06-22 10:19:14,474 INFO  EurekaServiceRegistry:41 - [] Registering application TRAIN-DETAILS with eureka with status UP
+2023-06-22 10:19:14,474 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409354474, current=UP, previous=STARTING]
+2023-06-22 10:19:14,475 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:19:14,481 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-22 10:19:14,482 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8081
+2023-06-22 10:19:14,503 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:19:14,755 INFO  StartupInfoLogger:57 - [] Started TrainDetailApplication in 2.602 seconds (process running for 110.491)
+2023-06-22 10:19:14,760 INFO  ConditionEvaluationDeltaLoggingListener:63 - [] Condition evaluation unchanged
+2023-06-22 10:19:40,843 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - [] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-22 10:19:40,846 INFO  EurekaServiceRegistry:62 - [] Unregistering application TRAIN-DETAILS with eureka with status DOWN
+2023-06-22 10:19:40,847 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409380847, current=DOWN, previous=UP]
+2023-06-22 10:19:40,849 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:19:40,861 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:19:40,880 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2023-06-22 10:19:40,896 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...
+2023-06-22 10:19:43,913 INFO  DiscoveryClient:915 - [] Unregistering ...
+2023-06-22 10:19:43,930 INFO  DiscoveryClient:917 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - deregister  status: 200
+2023-06-22 10:19:43,934 INFO  DiscoveryClient:904 - [] Completed shut down of DiscoveryClient
+2023-06-22 10:19:44,330 INFO  StartupInfoLogger:51 - [] Starting TrainDetailApplication using Java 17.0.6 with PID 18884 (G:\Online Railway Reservation System\Backend\TrainDetail\target\classes started by Rohit in G:\Online Railway Reservation System\Backend\TrainDetail)
+2023-06-22 10:19:44,332 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-06-22 10:19:45,319 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-22 10:19:45,359 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 38 ms. Found 2 MongoDB repository interfaces.
+2023-06-22 10:19:45,544 INFO  GenericScope:282 - [] BeanFactory id=22a72bcb-eeef-37b7-8817-118fd53f371e
+2023-06-22 10:19:45,685 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8081 (http)
+2023-06-22 10:19:45,686 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-06-22 10:19:45,686 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-22 10:19:45,750 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-06-22 10:19:45,752 INFO  ServletWebServerApplicationContext:291 - [] Root WebApplicationContext: initialization completed in 1415 ms
+2023-06-22 10:19:45,821 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@330a97ec, com.mongodb.Jep395RecordCodecProvider@7b40556a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-22 10:19:45,847 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13013800}
+2023-06-22 10:19:45,877 WARN  OptionalLiveReloadServer:62 - [] Unable to start LiveReload server
+2023-06-22 10:19:46,442 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-06-22 10:19:46,724 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-22 10:19:46,763 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-06-22 10:19:46,769 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-06-22 10:19:46,770 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:19:46,772 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-06-22 10:19:46,772 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-06-22 10:19:46,772 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-06-22 10:19:46,773 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-06-22 10:19:46,773 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-06-22 10:19:46,773 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-06-22 10:19:46,773 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-06-22 10:19:46,831 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-06-22 10:19:46,832 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-06-22 10:19:46,834 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-22 10:19:46,837 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1687409386837 with initial instances count: 4
+2023-06-22 10:19:46,839 INFO  EurekaServiceRegistry:41 - [] Registering application TRAIN-DETAILS with eureka with status UP
+2023-06-22 10:19:46,839 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409386839, current=UP, previous=STARTING]
+2023-06-22 10:19:46,840 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:19:46,846 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-22 10:19:46,848 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8081
+2023-06-22 10:19:46,864 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:19:47,114 INFO  StartupInfoLogger:57 - [] Started TrainDetailApplication in 3.107 seconds (process running for 142.849)
+2023-06-22 10:19:47,117 INFO  ConditionEvaluationDeltaLoggingListener:63 - [] Condition evaluation unchanged
+2023-06-22 10:20:03,973 INFO  StartupInfoLogger:51 - [] Starting TrainDetailApplicationTests using Java 17.0.6 with PID 14824 (started by Rohit in G:\Online Railway Reservation System\Backend\TrainDetail)
+2023-06-22 10:20:03,983 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-06-22 10:20:08,281 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-22 10:20:09,419 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 1105 ms. Found 2 MongoDB repository interfaces.
+2023-06-22 10:20:11,135 INFO  GenericScope:282 - [] BeanFactory id=c67b9727-90d8-3fa1-a8d9-1b071986b09a
+2023-06-22 10:20:13,136 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6d58ed12, com.mongodb.Jep395RecordCodecProvider@221ef0f0]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-22 10:20:13,204 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=132626900}
+2023-06-22 10:20:19,499 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-06-22 10:20:20,268 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-22 10:20:20,348 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-06-22 10:20:20,691 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-06-22 10:20:20,716 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:20:20,843 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-06-22 10:20:20,846 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-06-22 10:20:20,847 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-06-22 10:20:20,850 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-06-22 10:20:20,852 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-06-22 10:20:20,854 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-06-22 10:20:20,857 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-06-22 10:20:23,130 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-06-22 10:20:23,166 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-06-22 10:20:23,198 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-22 10:20:23,233 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1687409423228 with initial instances count: 4
+2023-06-22 10:20:23,249 INFO  EurekaServiceRegistry:41 - [] Registering application TRAIN-DETAILS with eureka with status UP
+2023-06-22 10:20:23,256 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409423256, current=UP, previous=STARTING]
+2023-06-22 10:20:23,268 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:20:23,351 INFO  StartupInfoLogger:57 - [] Started TrainDetailApplicationTests in 21.571 seconds (process running for 27.59)
+2023-06-22 10:20:23,539 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:20:29,832 INFO  EurekaServiceRegistry:62 - [] Unregistering application TRAIN-DETAILS with eureka with status DOWN
+2023-06-22 10:20:29,833 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409429833, current=DOWN, previous=UP]
+2023-06-22 10:20:29,835 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:20:29,856 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:20:29,855 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...
+2023-06-22 10:20:32,868 INFO  DiscoveryClient:915 - [] Unregistering ...
+2023-06-22 10:20:32,882 INFO  DiscoveryClient:917 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - deregister  status: 200
+2023-06-22 10:20:32,909 INFO  DiscoveryClient:904 - [] Completed shut down of DiscoveryClient
+2023-06-22 10:20:46,923 INFO  DiscoveryClient:841 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - Re-registering apps/TRAIN-DETAILS
+2023-06-22 10:20:46,923 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:20:46,930 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:21:46,695 INFO  DirectJDKLog:173 - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 10:21:46,696 INFO  FrameworkServlet:532 - [] Initializing Servlet 'dispatcherServlet'
+2023-06-22 10:21:46,700 INFO  FrameworkServlet:554 - [] Completed initialization in 1 ms
+2023-06-22 10:21:47,926 INFO  AbstractOpenApiResource:371 - [] Init duration for springdoc-openapi is: 420 ms
+2023-06-22 10:24:46,776 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:27:56,765 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - [] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-22 10:27:56,771 INFO  EurekaServiceRegistry:62 - [] Unregistering application TRAIN-DETAILS with eureka with status DOWN
+2023-06-22 10:27:56,771 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409876771, current=DOWN, previous=UP]
+2023-06-22 10:27:56,772 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:27:56,781 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:27:56,799 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2023-06-22 10:27:56,802 INFO  DirectJDKLog:173 - [] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-22 10:27:56,811 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...
+2023-06-22 10:27:59,830 INFO  DiscoveryClient:915 - [] Unregistering ...
+2023-06-22 10:27:59,836 INFO  DiscoveryClient:917 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - deregister  status: 200
+2023-06-22 10:27:59,851 INFO  DiscoveryClient:904 - [] Completed shut down of DiscoveryClient
+2023-06-22 10:28:00,212 INFO  StartupInfoLogger:51 - [] Starting TrainDetailApplication using Java 17.0.6 with PID 18884 (G:\Online Railway Reservation System\Backend\TrainDetail\target\classes started by Rohit in G:\Online Railway Reservation System\Backend\TrainDetail)
+2023-06-22 10:28:00,212 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-06-22 10:28:00,743 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-22 10:28:00,765 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 20 ms. Found 2 MongoDB repository interfaces.
+2023-06-22 10:28:00,898 INFO  GenericScope:282 - [] BeanFactory id=22a72bcb-eeef-37b7-8817-118fd53f371e
+2023-06-22 10:28:01,056 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8081 (http)
+2023-06-22 10:28:01,057 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-06-22 10:28:01,058 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-22 10:28:01,114 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-06-22 10:28:01,116 INFO  ServletWebServerApplicationContext:291 - [] Root WebApplicationContext: initialization completed in 900 ms
+2023-06-22 10:28:01,218 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@330a97ec, com.mongodb.Jep395RecordCodecProvider@7b40556a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-22 10:28:01,222 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2598800}
+2023-06-22 10:28:01,266 WARN  OptionalLiveReloadServer:62 - [] Unable to start LiveReload server
+2023-06-22 10:28:01,878 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-06-22 10:28:02,149 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-22 10:28:02,184 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-06-22 10:28:02,189 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-06-22 10:28:02,190 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:28:02,193 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-06-22 10:28:02,194 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-06-22 10:28:02,194 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-06-22 10:28:02,195 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-06-22 10:28:02,195 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-06-22 10:28:02,195 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-06-22 10:28:02,195 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-06-22 10:28:02,243 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-06-22 10:28:02,246 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-06-22 10:28:02,247 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-22 10:28:02,249 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1687409882249 with initial instances count: 3
+2023-06-22 10:28:02,251 INFO  EurekaServiceRegistry:41 - [] Registering application TRAIN-DETAILS with eureka with status UP
+2023-06-22 10:28:02,251 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409882251, current=UP, previous=STARTING]
+2023-06-22 10:28:02,251 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:28:02,259 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-22 10:28:02,275 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8081
+2023-06-22 10:28:02,277 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:28:02,532 INFO  StartupInfoLogger:57 - [] Started TrainDetailApplication in 2.596 seconds (process running for 638.268)
+2023-06-22 10:28:02,534 INFO  ConditionEvaluationDeltaLoggingListener:63 - [] Condition evaluation unchanged
+2023-06-22 10:28:30,454 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - [] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-22 10:28:30,472 INFO  EurekaServiceRegistry:62 - [] Unregistering application TRAIN-DETAILS with eureka with status DOWN
+2023-06-22 10:28:30,473 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409910473, current=DOWN, previous=UP]
+2023-06-22 10:28:30,474 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:28:30,487 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:28:30,497 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2023-06-22 10:28:30,505 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...
+2023-06-22 10:28:33,516 WARN  TimedSupervisorTask:90 - [] task supervisor shutting down, can't accept the task
+2023-06-22 10:28:33,517 INFO  DiscoveryClient:915 - [] Unregistering ...
+2023-06-22 10:28:33,521 INFO  DiscoveryClient:917 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - deregister  status: 200
+2023-06-22 10:28:33,525 INFO  DiscoveryClient:904 - [] Completed shut down of DiscoveryClient
+2023-06-22 10:28:33,924 INFO  StartupInfoLogger:51 - [] Starting TrainDetailApplication using Java 17.0.6 with PID 18884 (G:\Online Railway Reservation System\Backend\TrainDetail\target\classes started by Rohit in G:\Online Railway Reservation System\Backend\TrainDetail)
+2023-06-22 10:28:33,924 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-06-22 10:28:34,807 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-22 10:28:34,832 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 23 ms. Found 2 MongoDB repository interfaces.
+2023-06-22 10:28:34,938 INFO  GenericScope:282 - [] BeanFactory id=22a72bcb-eeef-37b7-8817-118fd53f371e
+2023-06-22 10:28:35,033 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8081 (http)
+2023-06-22 10:28:35,034 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-06-22 10:28:35,035 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-22 10:28:35,079 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-06-22 10:28:35,079 INFO  ServletWebServerApplicationContext:291 - [] Root WebApplicationContext: initialization completed in 1151 ms
+2023-06-22 10:28:35,116 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@330a97ec, com.mongodb.Jep395RecordCodecProvider@7b40556a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-22 10:28:35,123 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2693000}
+2023-06-22 10:28:35,153 WARN  OptionalLiveReloadServer:62 - [] Unable to start LiveReload server
+2023-06-22 10:28:35,695 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-06-22 10:28:35,926 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-22 10:28:35,951 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-06-22 10:28:35,954 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-06-22 10:28:35,956 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:28:35,957 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-06-22 10:28:35,957 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-06-22 10:28:35,958 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-06-22 10:28:35,958 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-06-22 10:28:35,958 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-06-22 10:28:35,958 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-06-22 10:28:35,958 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-06-22 10:28:35,980 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-06-22 10:28:35,981 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-06-22 10:28:35,982 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-22 10:28:35,984 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1687409915984 with initial instances count: 4
+2023-06-22 10:28:35,986 INFO  EurekaServiceRegistry:41 - [] Registering application TRAIN-DETAILS with eureka with status UP
+2023-06-22 10:28:35,986 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687409915986, current=UP, previous=STARTING]
+2023-06-22 10:28:35,986 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 10:28:35,993 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-22 10:28:35,994 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8081
+2023-06-22 10:28:36,005 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 10:28:36,242 INFO  StartupInfoLogger:57 - [] Started TrainDetailApplication in 2.637 seconds (process running for 671.978)
+2023-06-22 10:28:36,244 INFO  ConditionEvaluationDeltaLoggingListener:63 - [] Condition evaluation unchanged
+2023-06-22 10:29:12,962 INFO  DirectJDKLog:173 - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 10:29:12,963 INFO  FrameworkServlet:532 - [] Initializing Servlet 'dispatcherServlet'
+2023-06-22 10:29:12,966 INFO  FrameworkServlet:554 - [] Completed initialization in 3 ms
+2023-06-22 10:29:12,983 WARN  AbstractHandlerExceptionResolver:207 - [] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'source' for method parameter type String is not present]
+2023-06-22 10:33:35,973 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:38:35,986 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:43:35,992 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:47:19,929 INFO  TrainController:72 - [] [getTrain] method called
+2023-06-22 10:47:19,930 DEBUG TrainController:73 - [] [getTrain] method called
+2023-06-22 10:48:36,000 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:50:38,026 INFO  TrainController:85 - [] [updateTrain] Method called
+2023-06-22 10:50:38,027 DEBUG TrainController:86 - [] [updateTrain] Method called
+2023-06-22 10:50:59,003 INFO  TrainController:85 - [] [updateTrain] Method called
+2023-06-22 10:50:59,004 DEBUG TrainController:86 - [] [updateTrain] Method called
+2023-06-22 10:53:36,009 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 10:58:36,018 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:03:36,026 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:08:36,033 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:13:36,038 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:18:36,055 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:23:36,066 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:28:36,074 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:33:36,117 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:38:36,133 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:43:36,143 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:48:36,158 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:53:36,166 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 11:58:36,184 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:03:36,188 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:08:36,192 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:13:36,209 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:18:36,223 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:23:36,230 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:28:36,242 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:33:36,254 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:38:36,262 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:43:36,265 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:48:36,272 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 12:48:47,699 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:159 - [] Application shutdown requested.
+2023-06-22 12:48:47,715 INFO  EurekaServiceRegistry:62 - [] Unregistering application TRAIN-DETAILS with eureka with status DOWN
+2023-06-22 12:48:47,718 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687418327718, current=DOWN, previous=UP]
+2023-06-22 12:48:47,720 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 12:48:47,732 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 12:48:47,753 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2023-06-22 12:48:47,755 INFO  DirectJDKLog:173 - [] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-22 12:48:47,781 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...
+2023-06-22 12:48:50,786 INFO  DiscoveryClient:915 - [] Unregistering ...
+2023-06-22 12:48:50,798 INFO  DiscoveryClient:917 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - deregister  status: 200
+2023-06-22 12:48:50,824 INFO  DiscoveryClient:904 - [] Completed shut down of DiscoveryClient
+2023-06-22 20:10:14,423 INFO  StartupInfoLogger:51 - [] Starting TrainDetailApplication using Java 17.0.6 with PID 13200 (G:\Online Railway Reservation System\Backend\TrainDetail\target\classes started by Rohit in G:\Online Railway Reservation System\Backend\TrainDetail)
+2023-06-22 20:10:14,435 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-06-22 20:10:14,545 INFO  DeferredLog:250 - [] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-22 20:10:14,548 INFO  DeferredLog:250 - [] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-22 20:10:15,800 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-22 20:10:16,055 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 249 ms. Found 2 MongoDB repository interfaces.
+2023-06-22 20:10:16,370 INFO  GenericScope:282 - [] BeanFactory id=22a72bcb-eeef-37b7-8817-118fd53f371e
+2023-06-22 20:10:17,141 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8081 (http)
+2023-06-22 20:10:17,165 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-06-22 20:10:17,166 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-22 20:10:17,303 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-06-22 20:10:17,306 INFO  ServletWebServerApplicationContext:291 - [] Root WebApplicationContext: initialization completed in 2755 ms
+2023-06-22 20:10:17,608 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@491bc66c, com.mongodb.Jep395RecordCodecProvider@45605b6a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-22 20:10:17,630 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=41647900}
+2023-06-22 20:10:17,851 WARN  OptionalLiveReloadServer:62 - [] Unable to start LiveReload server
+2023-06-22 20:10:19,266 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-06-22 20:10:19,523 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-22 20:10:19,595 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-06-22 20:10:19,646 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-06-22 20:10:19,658 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 20:10:19,692 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-06-22 20:10:19,693 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-06-22 20:10:19,693 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-06-22 20:10:19,695 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-06-22 20:10:19,695 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-06-22 20:10:19,695 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-06-22 20:10:19,695 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-06-22 20:10:20,178 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-06-22 20:10:20,181 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-06-22 20:10:20,223 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-22 20:10:20,231 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1687444820230 with initial instances count: 2
+2023-06-22 20:10:20,234 INFO  EurekaServiceRegistry:41 - [] Registering application TRAIN-DETAILS with eureka with status UP
+2023-06-22 20:10:20,235 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1687444820235, current=UP, previous=STARTING]
+2023-06-22 20:10:20,237 INFO  DiscoveryClient:817 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081: registering service...
+2023-06-22 20:10:20,274 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-22 20:10:20,275 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8081
+2023-06-22 20:10:20,308 INFO  DiscoveryClient:826 - [] DiscoveryClient_TRAIN-DETAILS/DESKTOP-2NG49C4:TRAIN-DETAILS:8081 - registration status: 204
+2023-06-22 20:10:20,475 INFO  StartupInfoLogger:57 - [] Started TrainDetailApplication in 7.076 seconds (process running for 8.388)
+2023-06-22 20:10:25,101 INFO  DirectJDKLog:173 - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 20:10:25,103 INFO  FrameworkServlet:532 - [] Initializing Servlet 'dispatcherServlet'
+2023-06-22 20:10:25,115 INFO  FrameworkServlet:554 - [] Completed initialization in 3 ms
+2023-06-22 20:10:26,342 INFO  AbstractOpenApiResource:371 - [] Init duration for springdoc-openapi is: 538 ms
+2023-06-22 20:15:19,712 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 20:15:40,724 INFO  TrainController:85 - [] [updateTrain] Method called
+2023-06-22 20:15:40,727 DEBUG TrainController:86 - [] [updateTrain] Method called
+2023-06-22 20:20:19,729 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 20:25:19,734 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 20:30:19,750 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 20:35:19,761 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 20:40:19,768 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 20:45:19,776 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 20:50:19,779 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 20:55:19,793 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 21:00:19,797 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 21:05:19,811 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 21:10:19,824 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-06-22 21:15:19,834 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration

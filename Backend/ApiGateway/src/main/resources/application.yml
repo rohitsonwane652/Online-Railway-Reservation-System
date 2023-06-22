@@ -1,0 +1,35 @@
+spring:
+ cloud:
+   gateway:
+     globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedMethods:
+              - GET
+     routes:
+       - id: TrainDetails
+         uri: lb://TRAIN-DETAILS
+         predicates:
+           - Path=/train/**
+#         filters:
+#           - AuthenticationFilter
+           
+       - id: RailwaySecurities
+         uri: lb://RAILWAY-SECURITY
+         predicates:
+           - Path= /auth/**
+           
+           
+       - id: BookTickets
+         uri: lb://BOOK-TICKET
+         predicates:
+           - Path= /book/**
+
+ application:
+   name: API-GATEWAY
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/
