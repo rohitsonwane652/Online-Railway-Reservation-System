@@ -1,11 +1,15 @@
 package com.casestudy.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
 @Document
 public class TrainTicket {
+	
+	@Transient
+    public static final String SEQUENCE_NAME = "ticket_sequence";
 	
 	@Id
 	private int pnrNo;
@@ -14,19 +18,20 @@ public class TrainTicket {
 	private int age;
 	private int seatNo;
 	private String coach;
+	private String seatType;
 	private int trainNo;
 	private String username;
 	private String source;
 	private String destination;
 	private String travelDate;
 	private String trainName;
-	
-	
-	
+	private String departureTime;
+	private String arrivalTime;
 	
 
-	public TrainTicket(int pnrNo, String name, String gender, int age, int seatNo, String coach, int trainNo,
-			String username, String source, String destination, String travelDate, String trainName) {
+	public TrainTicket(int pnrNo, String name, String gender, int age, int seatNo, String coach, String seatType,
+			int trainNo, String username, String source, String destination, String travelDate, String trainName,
+			String departureTime, String arrivalTime) {
 		super();
 		this.pnrNo = pnrNo;
 		this.name = name;
@@ -34,12 +39,15 @@ public class TrainTicket {
 		this.age = age;
 		this.seatNo = seatNo;
 		this.coach = coach;
+		this.seatType = seatType;
 		this.trainNo = trainNo;
 		this.username = username;
 		this.source = source;
 		this.destination = destination;
 		this.travelDate = travelDate;
 		this.trainName = trainName;
+		this.departureTime = departureTime;
+		this.arrivalTime = arrivalTime;
 	}
 
 	public TrainTicket() {
@@ -84,6 +92,15 @@ public class TrainTicket {
 		this.coach = coach;
 	}
 	
+	
+	public String getSeatType() {
+		return seatType;
+	}
+
+	public void setSeatType(String seatType) {
+		this.seatType = seatType;
+	}
+
 	public int getTrainNo() {
 		return trainNo;
 	}
@@ -130,6 +147,22 @@ public class TrainTicket {
 
 	public void setTrainName(String trainName) {
 		this.trainName = trainName;
+	}
+
+	public String getDepartureTime() {
+		return departureTime;
+	}
+
+	public void setDepartureTime(String departureTime) {
+		this.departureTime = departureTime;
+	}
+
+	public String getArrivalTime() {
+		return arrivalTime;
+	}
+
+	public void setArrivalTime(String arrivalTime) {
+		this.arrivalTime = arrivalTime;
 	}
 	
 	

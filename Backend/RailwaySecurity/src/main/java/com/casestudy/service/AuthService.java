@@ -46,7 +46,6 @@ public class AuthService {
 	
 	public String generateToken(String email,String role) {
 		
-//		System.out.println("hello1"+role);
 		return jwtService.genarateToken(email,role);
 		
 		

@@ -5,6 +5,7 @@ import java.util.List;
 public class Train {
 	
 	private Integer trainNo;
+	private Integer trainId;
 	private String trainName;
 	private String trainStart;
 	private String trainEnd;
@@ -21,15 +22,16 @@ public class Train {
 	
 	
 	
-	
 
-	
-	
-	public Train(Integer trainNo, String trainName, String trainStart, String trainEnd, int availableAC,
-			int availableSL, int fareSL, int fareAC, int waitingSL, int waitingAC, List<String> stations,
-			String departureTime, String arrivalTime) {
+
+
+
+	public Train(Integer trainNo, Integer trainId, String trainName, String trainStart, String trainEnd,
+			int availableAC, int availableSL, int fareSL, int fareAC, int waitingSL, int waitingAC,
+			List<String> stations, String departureTime, String arrivalTime) {
 		super();
 		this.trainNo = trainNo;
+		this.trainId = trainId;
 		this.trainName = trainName;
 		this.trainStart = trainStart;
 		this.trainEnd = trainEnd;
@@ -61,6 +63,17 @@ public class Train {
 	public void setTrainNo(Integer trainNo) {
 		this.trainNo = trainNo;
 	}
+	
+	public Integer getTrainId() {
+		return trainId;
+	}
+	public void setTrainId(Integer trainId) {
+		this.trainId = trainId;
+	}
+
+
+
+
 	public String getTrainName() {
 		return trainName;
 	}

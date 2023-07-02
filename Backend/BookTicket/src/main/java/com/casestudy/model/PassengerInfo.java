@@ -9,11 +9,11 @@ public class PassengerInfo {
 	private String gender;
 	private int age;
 	private int trainNo;
-	private String username;
+	private String userEmail;
 	private String source;
 	private String destination;
-	private String travelDate;
-	
+	private String departureTime;
+	private String arrivalTime;
 	
 	public String getName() {
 		return name;
@@ -39,11 +39,11 @@ public class PassengerInfo {
 	public void setTrainNo(int trainNo) {
 		this.trainNo = trainNo;
 	}
-	public String getUsername() {
-		return username;
+	public String getUserEmail() {
+		return userEmail;
 	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
 	}
 	public String getSource() {
 		return source;
@@ -57,25 +57,31 @@ public class PassengerInfo {
 	public void setDestination(String destination) {
 		this.destination = destination;
 	}
-	public String getTravelDate() {
-		return travelDate;
+	public String getDepartureTime() {
+		return departureTime;
 	}
-	public void setTravelDate(String travelDate) {
-		this.travelDate = travelDate;
+	public void setDepartureTime(String departureTime) {
+		this.departureTime = departureTime;
+	}
+	public String getArrivalTime() {
+		return arrivalTime;
+	}
+	public void setArrivalTime(String arrivalTime) {
+		this.arrivalTime = arrivalTime;
 	}
 	
-	
-	public PassengerInfo(String name, String gender, int age, int trainNo, String username, String source,
-			String destination, String travelDate) {
+	public PassengerInfo(String name, String gender, int age, int trainNo, String userEmail, String source,
+			String destination, String departureTime, String arrivalTime) {
 		super();
 		this.name = name;
 		this.gender = gender;
 		this.age = age;
 		this.trainNo = trainNo;
-		this.username = username;
+		this.userEmail = userEmail;
 		this.source = source;
 		this.destination = destination;
-		this.travelDate = travelDate;
+		this.departureTime = departureTime;
+		this.arrivalTime = arrivalTime;
 	}
 	public PassengerInfo() {
 		super();

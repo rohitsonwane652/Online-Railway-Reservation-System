@@ -22,7 +22,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.casestudy.model.Train;
-import com.casestudy.model.TrainInfo;
+import com.casestudy.model.TrainDetail;
+import com.casestudy.model.TrainJourney;
 import com.casestudy.model.TrainStation;
 import com.casestudy.service.TrainService;
 
@@ -48,17 +49,27 @@ public class TrainController {
 	@Autowired
 	private TrainService trainService;
 	
+	@PostMapping("/addtrain")
+	public ResponseEntity<TrainDetail> addTrain(@RequestBody final TrainDetail train){
+		final TrainDetail trainDetail = trainService.addTrain(train);
+		return new ResponseEntity<>(trainDetail,HttpStatus.OK);
+	}
+	
 	
 	/**
 	*Add New Train Details
 	*/ 	
-	@PostMapping("/addtrain")
-	public ResponseEntity<TrainInfo> addTrain(@RequestBody final TrainInfo trainInfo){
-		final TrainInfo info = trainService.addTrain(trainInfo);
+	@PostMapping("/addtrainjourney")
+	public ResponseEntity<TrainJourney> addTrainJourney(@RequestParam Integer trainId,@RequestParam final @DateTimeFormat(pattern = "yyyy-MM-dd") Date date
+			){
 		
-		logger.info("[addTrain] Method called");
-		logger.debug("[addTrain] Method called");
-		return new ResponseEntity<>(info,HttpStatus.OK);
+			final TrainJourney journey = trainService.addTrainJourney(trainId, date);
+			return new ResponseEntity<>(journey,HttpStatus.OK);
+//		final TrainJourney info = trainService.addTrainJourney(trainInfo);
+//		
+//		logger.info("[addTrain] Method called");
+//		logger.debug("[addTrain] Method called");
+//		return new ResponseEntity<>(info,HttpStatus.OK);
 	}
 	
 	
@@ -66,8 +77,8 @@ public class TrainController {
 	 *Get Train by TrainNumber
 	 */
 	@GetMapping("/find")
-	public ResponseEntity<TrainInfo> getTrain(@RequestParam final int trainNo){
-		final TrainInfo info = trainService.getTrain(trainNo);
+	public ResponseEntity<TrainJourney> getTrain(@RequestParam final int trainNo){
+		final TrainJourney info = trainService.getTrain(trainNo);
 		
 		logger.info("[getTrain] method called");
 		logger.debug("[getTrain] method called");
@@ -78,9 +89,9 @@ public class TrainController {
 	/**
 	 * Update Existing Train Details
 	 */
-	@PutMapping("/updatetrain")
-	public ResponseEntity<TrainInfo> updateTrain(@RequestParam final int trainNo,@RequestBody final TrainInfo trainInfo){
-		final TrainInfo info = trainService.updateTrain(trainNo, trainInfo);
+	@PutMapping("/updatetrainjourney")
+	public ResponseEntity<TrainJourney> updateTrainJourney(@RequestParam final int trainNo,@RequestBody final TrainJourney trainInfo){
+		final TrainJourney info = trainService.updateTrainJourney(trainNo, trainInfo);
 		
 		logger.info("[updateTrain] Method called");
 		logger.debug("[updateTrain] Method called");
@@ -99,19 +110,19 @@ public class TrainController {
 	/**
 	 * Update Train SL Seats
 	 */
-	@PutMapping("/updateSlSeat/{seatCount}")
-	public String updateSlSeat(@PathVariable int trainNo) {
-		return null;
+	@PutMapping("/updateSlSeat/{trainNo}/{status}")
+	public void updateSlSeat(@PathVariable final int trainNo,@PathVariable final String status) {
+		trainService.updateSlSeat(trainNo, status);
 	}
 	
 	
 	/**
 	 * Search Trains for Source to Destination
 	 */
-	@CrossOrigin(origins = "http://localhost:4200")
+//	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping("/search")
 	public List<Train> searchTrain(@RequestParam final String source, @RequestParam final String dest,
-			@RequestParam final @DateTimeFormat(pattern = "yyyy-MM-dd") Date date){
+			@RequestParam final @DateTimeFormat(pattern = "MM/dd/yyyy") Date date){
 		return trainService.searchTrain(source,dest,date);
 	}
 	
@@ -126,6 +137,12 @@ public class TrainController {
 		logger.info("New Train Stations Added");
 		
 		return new ResponseEntity<>(trainsStation,HttpStatus.OK);
+	}
+	
+	
+	@GetMapping("/getallstations")
+	public List<String> getAllStations(){
+		return trainService.getAllStations();
 	}
 	
 	
@@ -162,4 +179,5 @@ public class TrainController {
 				"Missing JWT token. please provide one. if u dont have one please get one using /auth/token",
 				HttpStatus.UNAUTHORIZED);
 	}
+	
 }

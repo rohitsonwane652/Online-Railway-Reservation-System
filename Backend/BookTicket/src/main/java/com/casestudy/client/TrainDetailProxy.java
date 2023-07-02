@@ -17,4 +17,7 @@ public interface TrainDetailProxy {
 	
 	@PutMapping("/train/updateAcSeat/{trainNo}/{status}")
 	public void updateAcSeat(@PathVariable int trainNo,@PathVariable String status);
+	
+	@PutMapping("/train/updateSlSeat/{trainNo}/{status}")
+	public void updateSlSeat(@PathVariable int trainNo,@PathVariable String status);
 }

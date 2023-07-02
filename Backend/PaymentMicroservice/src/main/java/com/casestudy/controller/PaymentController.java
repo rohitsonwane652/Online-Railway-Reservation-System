@@ -1,6 +1,7 @@
 package com.casestudy.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.casestudy.model.TransactionDetails;
 import com.casestudy.service.PaymentService;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/payment")
 public class PaymentController {
@@ -19,5 +21,10 @@ public class PaymentController {
 	@GetMapping("/createTransaction")
 	public TransactionDetails createTransaction(@RequestParam final double amount) {
 		return paymentService.createTransaction(amount);
+	}
+	
+	@GetMapping("/test")
+	public String done() {
+		return "Success";
 	}
 }

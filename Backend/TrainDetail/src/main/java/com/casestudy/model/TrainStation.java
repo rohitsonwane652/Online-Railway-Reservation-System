@@ -1,11 +1,15 @@
 package com.casestudy.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
 @Document(collection = "stations")
 public class TrainStation {
+	
+	@Transient
+    public static final String SEQUENCE_NAME = "station_sequence";
 	
 	@Id
 	private int stationId;
@@ -16,7 +20,7 @@ public class TrainStation {
 	private String arrivalTime;
 	private int journeyFare;
 	
-	private Integer trainNo;
+	private Integer trainId;
 	
 	
 
@@ -29,7 +33,7 @@ public class TrainStation {
 		this.departureTime = departureTime;
 		this.arrivalTime = arrivalTime;
 		this.journeyFare = journeyFare;
-		this.trainNo = trainNo;
+		this.trainId = trainNo;
 	}
 	
 	
@@ -137,16 +141,16 @@ public class TrainStation {
 
 
 
-	public Integer getTrainNo() {
-		return trainNo;
+	public Integer getTrainId() {
+		return trainId;
 	}
 
 
 
 
 
-	public void setTrainNo(Integer trainNo) {
-		this.trainNo = trainNo;
+	public void setTrainId(Integer trainId) {
+		this.trainId = trainId;
 	}
 
 
@@ -157,7 +161,7 @@ public class TrainStation {
 	public String toString() {
 		return "TrainStation [stationId=" + stationId + ", trainFrom=" + trainFrom + ", trainTo=" + trainTo
 				+ ", trainFare=" + ", departureTime=" + departureTime + ", arrivalTime=" + arrivalTime
-				+ ", trainNo=" + trainNo + "]";
+				+ ", trainNo=" + trainId + "]";
 	}
 	
 	

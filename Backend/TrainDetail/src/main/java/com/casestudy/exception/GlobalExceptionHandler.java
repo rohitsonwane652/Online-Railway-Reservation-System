@@ -20,6 +20,17 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<String>(message, HttpStatus.NOT_FOUND);
 	}
 	
+	@ExceptionHandler(TrainExistException.class)
+	public ResponseEntity<String> trainExistExceptionHandler(TrainExistException ex) {
+		String message = ex.getMessage();
+		return new ResponseEntity<String>(message, HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler(TrainJourneyExistException.class)
+	public ResponseEntity<String> trainJourneyExistHandler(TrainJourneyExistException ex) {
+		String message = ex.getMessage();
+		return new ResponseEntity<String>(message, HttpStatus.ALREADY_REPORTED);
+	}
 	
 	@ExceptionHandler(NullPointerException.class)
 	public ResponseEntity<String> nullPointerExceptionHandler(NullPointerException ex) {

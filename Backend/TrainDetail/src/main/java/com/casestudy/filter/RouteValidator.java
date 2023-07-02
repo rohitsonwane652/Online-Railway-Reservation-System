@@ -24,11 +24,14 @@ public class RouteValidator {
 			"/swagger-ui/favicon-32x32.png",
 			"/swagger-ui/favicon-16x16.png",
 			"train/find",
-			"train/search"
+			"train/search",
+			"train/addtrain",
+			"train/getallstations",
+			"train/updateAcSeat"
 			);
 	
 	public static final  List<String> userApiEndPoints=List.of(
-			"train/updateAcSeat"
+			
 			);
 	public static final  List<String> adminApiEndPoints=List.of(
 			"train/addtrain",

@@ -1,13 +1,15 @@
 spring:
  cloud:
    gateway:
-     globalcors:
+    default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+    globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "http://localhost:4200"
-            allowedMethods:
-              - GET
-     routes:
+              allowedOrigins: "*"
+              allowedMethods: "*"
+              allowedHeaders: "*"
+    routes:
        - id: TrainDetails
          uri: lb://TRAIN-DETAILS
          predicates:

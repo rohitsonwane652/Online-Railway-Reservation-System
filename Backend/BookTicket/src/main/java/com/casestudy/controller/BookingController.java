@@ -1,5 +1,7 @@
 package com.casestudy.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.casestudy.client.TrainDetailProxy;
 import com.casestudy.model.PassengerInfo;
 import com.casestudy.model.TrainTicket;
-import com.casestudy.service.BookingServiceImpl;
+import com.casestudy.service.BookingService;
 import com.casestudy.util.TrainInfoDto;
 
 @RestController
@@ -20,12 +22,22 @@ import com.casestudy.util.TrainInfoDto;
 public class BookingController {
 	
 	@Autowired
-	private BookingServiceImpl bookingService;
+	private BookingService bookingService;
 	
 	
 	@PostMapping("/acticket")
-	public TrainTicket bookTicket(@RequestBody PassengerInfo passenger) {
-		return bookingService.bookTicket(passenger);
+	public TrainTicket bookAcTicket(@RequestBody PassengerInfo passenger) {
+		return bookingService.bookAcTicket(passenger);
 	}
 	
+	@PostMapping("slticket")
+	public TrainTicket bookSlTicket(@RequestBody PassengerInfo passenger) {
+		return bookingService.bookSlTicket(passenger);
+	}
+	
+	
+	@GetMapping("/getmytickets")
+	public List<TrainTicket> getMyTickets(@RequestParam String userEmail){
+		return bookingService.getMyTickets(userEmail);
+	}
 }

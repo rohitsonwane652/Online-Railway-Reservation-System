@@ -34,16 +34,14 @@ public class JwtService {
 	public String genarateToken(String email,String role) {
 		
 		Map<String, Object> claims=new HashMap<>();
-//		System.out.println("hello1"+null);
 		return createToken(claims,email,role);
 		
 	}
 	
 	
 	private String createToken(Map<String, Object> claims,String email,String role) {
-//		System.out.println("hello"+role);
 		claims.put("role", role);
-		System.out.println(role);
+//		System.out.println(role);
 		return Jwts.builder()
 				.setClaims(claims)
 				.setSubject(email)
