@@ -208,7 +208,7 @@ public class TrainServiceImpl implements TrainService{
 		int slSeats = info.getSeatsSL();
 		if(status.equalsIgnoreCase("SL")) {
 			slSeats = slSeats - 1;
-			info.setSeatsAC(slSeats);
+			info.setSeatsSL(slSeats);
 			trainJourneyRepo.save(info);
 		}
 		else if(status.equalsIgnoreCase("WL")) {

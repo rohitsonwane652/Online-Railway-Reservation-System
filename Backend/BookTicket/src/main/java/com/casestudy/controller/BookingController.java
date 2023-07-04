@@ -40,4 +40,9 @@ public class BookingController {
 	public List<TrainTicket> getMyTickets(@RequestParam String userEmail){
 		return bookingService.getMyTickets(userEmail);
 	}
+	
+	@GetMapping("/test")
+	public Integer test() {
+		return 7;
+	}
 }

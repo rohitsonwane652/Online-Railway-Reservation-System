@@ -71,6 +71,7 @@ public class BookingServiceImpl implements BookingService {
 		int slSeats = trainInfo.getSeatsSL();
 		
 		int seatNo = slCapacity - slSeats + 1;
+		System.out.println(seatNo);
 		String coach = "";
 		
 		if(seatNo>0 && seatNo<=10) {
@@ -80,7 +81,7 @@ public class BookingServiceImpl implements BookingService {
 			coach = "S2";
 		}
 		if(slSeats > 0) {
-			trainProxy.updateAcSeat(trainNo, "SL");
+			trainProxy.updateSlSeat(trainNo, "SL");
 		}
 		
 		DateFormat dateFormat = new SimpleDateFormat("dd MMMM yyyy");  
