@@ -42,7 +42,7 @@ class TrainDetailApplicationTests {
 	}
 	
 	@Test
-	void testAddTrainDetails() {
+	void testAddTrain() {
 		TrainJourney traininfo = new TrainJourney();
 		
 		traininfo.setTrainNo(101);

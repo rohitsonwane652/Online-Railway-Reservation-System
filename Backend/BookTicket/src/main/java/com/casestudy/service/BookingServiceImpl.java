@@ -5,12 +5,15 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import com.casestudy.client.TrainDetailProxy;
 import com.casestudy.model.PassengerInfo;
 import com.casestudy.model.TrainTicket;
 import com.casestudy.repository.TicketRepository;
+import com.casestudy.util.EmailSender;
 import com.casestudy.util.SequenceGeneratorService;
 import com.casestudy.util.TrainDetail;
 import com.casestudy.util.TrainInfoDto;
@@ -27,11 +30,17 @@ public class BookingServiceImpl implements BookingService {
 	@Autowired
 	private SequenceGeneratorService sequenceGeneratorService;
 	
+	@Autowired
+	private JavaMailSender emailSender;
+	
 	public TrainTicket bookAcTicket(PassengerInfo passenger) {
 		
 		int trainNo = passenger.getTrainNo();
-		int pnrNo = sequenceGeneratorService.generateSequence(TrainTicket.SEQUENCE_NAME);
 		TrainInfoDto trainInfo = trainProxy.getTrain(trainNo);
+		int pnrNo = sequenceGeneratorService.generateSequence(TrainTicket.SEQUENCE_NAME);
+		
+		
+		
 		TrainDetail train = trainInfo.getTrainDetail();
 		int acCapacity = train.getCapacityAC();
 		int acSeats = trainInfo.getSeatsAC();
@@ -100,6 +109,37 @@ public class BookingServiceImpl implements BookingService {
 		// TODO Auto-generated method stub
 		return ticketRepo.findByUsername(userEmail);
 	}
+	
+	
+	 
+	@Override
+	public void sendEmail(String to, String subject, String message) {
+	    SimpleMailMessage mailMessage = new SimpleMailMessage();
+	    mailMessage.setTo(to);
+	    mailMessage.setSubject(subject);
+	    mailMessage.setText(message);
+	    emailSender.send(mailMessage);
+	}
 
+	@Override
+	public void cancelAcTicket(int pnrNo) {
+		TrainTicket ticket = ticketRepo.findById(pnrNo).orElse(null);
+		trainProxy.cancelAcTicket(ticket.getTrainNo());
+		ticketRepo.deleteById(pnrNo);
+	}
+
+	@Override
+	public void cancelSlTicket(int pnrNo) {
+		// TODO Auto-generated method stub
+		TrainTicket ticket = ticketRepo.findById(pnrNo).orElse(null);
+		trainProxy.cancelSlTicket(ticket.getTrainNo());
+		ticketRepo.deleteById(pnrNo);
+		
+	}
+
+	@Override
+	public TrainTicket getPnrStatus(int pnrNo) {
+		return ticketRepo.findById(pnrNo).orElse(null);
+	}
 	
 }

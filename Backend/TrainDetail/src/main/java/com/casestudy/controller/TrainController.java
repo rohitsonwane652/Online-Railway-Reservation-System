@@ -65,11 +65,7 @@ public class TrainController {
 		
 			final TrainJourney journey = trainService.addTrainJourney(trainId, date);
 			return new ResponseEntity<>(journey,HttpStatus.OK);
-//		final TrainJourney info = trainService.addTrainJourney(trainInfo);
-//		
-//		logger.info("[addTrain] Method called");
-//		logger.debug("[addTrain] Method called");
-//		return new ResponseEntity<>(info,HttpStatus.OK);
+
 	}
 	
 	
@@ -115,6 +111,15 @@ public class TrainController {
 		trainService.updateSlSeat(trainNo, status);
 	}
 	
+	@PutMapping("/cancelacseat/{trainNo}")
+	public void cancelAcSeat(@PathVariable final int trainNo) {
+		trainService.cancelAcTicket(trainNo);
+	}
+	
+	@PutMapping("/cancelslseat/{trainNo}")
+	public void cancelSlSeat(@PathVariable final int trainNo) {
+		trainService.cancelSlTicket(trainNo);
+	}
 	
 	/**
 	 * Search Trains for Source to Destination
@@ -139,11 +144,25 @@ public class TrainController {
 		return new ResponseEntity<>(trainsStation,HttpStatus.OK);
 	}
 	
+	@PutMapping("/updatestation")
+	public ResponseEntity<TrainStation> updateStation(@RequestBody final TrainStation station){
+		System.out.println("Hello");
+		final TrainStation trainStation = trainService.updateStation(station);
+		return new ResponseEntity<>(trainStation,HttpStatus.OK);
+	}
+	
+	@GetMapping("/getstationinfo")
+	public List<TrainStation> getStationInfo(@RequestParam final Integer trainId){
+		return trainService.getStationInfo(trainId);
+	}
+	
 	
 	@GetMapping("/getallstations")
 	public List<String> getAllStations(){
 		return trainService.getAllStations();
 	}
+	
+	
 	
 	
 	/**
@@ -179,5 +198,7 @@ public class TrainController {
 				"Missing JWT token. please provide one. if u dont have one please get one using /auth/token",
 				HttpStatus.UNAUTHORIZED);
 	}
+	
+	
 	
 }

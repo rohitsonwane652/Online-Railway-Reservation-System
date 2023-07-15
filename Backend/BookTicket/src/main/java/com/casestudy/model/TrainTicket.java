@@ -1,5 +1,7 @@
 package com.casestudy.model;
 
+import java.util.Objects;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -163,6 +165,39 @@ public class TrainTicket {
 
 	public void setArrivalTime(String arrivalTime) {
 		this.arrivalTime = arrivalTime;
+	}
+
+	@Override
+	public String toString() {
+		return "TrainTicket [pnrNo=" + pnrNo + ", name=" + name + ", gender=" + gender + ", age=" + age + ", seatNo="
+				+ seatNo + ", coach=" + coach + ", seatType=" + seatType + ", trainNo=" + trainNo + ", username="
+				+ username + ", source=" + source + ", destination=" + destination + ", travelDate=" + travelDate
+				+ ", trainName=" + trainName + ", departureTime=" + departureTime + ", arrivalTime=" + arrivalTime
+				+ "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(age, arrivalTime, coach, departureTime, destination, gender, name, pnrNo, seatNo, seatType,
+				source, trainName, trainNo, travelDate, username);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TrainTicket other = (TrainTicket) obj;
+		return age == other.age && Objects.equals(arrivalTime, other.arrivalTime) && Objects.equals(coach, other.coach)
+				&& Objects.equals(departureTime, other.departureTime) && Objects.equals(destination, other.destination)
+				&& Objects.equals(gender, other.gender) && Objects.equals(name, other.name) && pnrNo == other.pnrNo
+				&& seatNo == other.seatNo && Objects.equals(seatType, other.seatType)
+				&& Objects.equals(source, other.source) && Objects.equals(trainName, other.trainName)
+				&& trainNo == other.trainNo && Objects.equals(travelDate, other.travelDate)
+				&& Objects.equals(username, other.username);
 	}
 	
 	

@@ -31,8 +31,8 @@ public class AuthController {
 	
 	
 	@PostMapping("/register")
-	public String addNewUser(@RequestBody UserData userData) {
-	
+	public UserData addNewUser(@RequestBody UserData userData) {
+		System.out.println(userData);
 		return authService.saveUser(userData);
 		
 	}

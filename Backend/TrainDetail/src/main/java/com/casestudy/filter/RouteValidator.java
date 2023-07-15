@@ -28,7 +28,11 @@ public class RouteValidator {
 			"train/addtrain",
 			"train/getallstations",
 			"train/updateAcSeat",
-			"train/updateSlSeat"
+			"train/updateSlSeat",
+			"train/getstationinfo",
+			"train/updatestation",
+			"train/cancelacseat",
+			"train/cancelslseat"
 			);
 	
 	public static final  List<String> userApiEndPoints=List.of(

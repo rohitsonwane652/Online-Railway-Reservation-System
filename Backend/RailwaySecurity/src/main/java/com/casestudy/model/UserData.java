@@ -59,6 +59,11 @@ public class UserData {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	@Override
+	public String toString() {
+		return "UserData [userId=" + userId + ", userName=" + userName + ", email=" + email + ", password=" + password
+				+ ", role=" + role + "]";
+	}
 	
 	
 }

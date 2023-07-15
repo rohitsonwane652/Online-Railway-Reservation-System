@@ -9,4 +9,5 @@ import com.casestudy.model.TrainStation;
 public interface TrainStationRepository extends MongoRepository<TrainStation, Integer> {
 	
 	List<TrainStation> findByTrainFromAndTrainTo(String trainFrom,String trainTo);
+	List<TrainStation> findByTrainId(Integer trainId);
 }

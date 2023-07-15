@@ -1,0 +1,268 @@
+2023-07-10 00:03:03,163 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 00:05:29,717 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 00:05:29,718 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 00:05:33,661 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 00:05:33,661 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 00:05:35,454 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 00:05:35,455 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 00:05:40,176 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 00:05:40,176 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 00:08:03,259 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 00:13:03,274 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 00:18:03,278 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 00:21:41,888 INFO  AbstractOpenApiResource:371 - [] Init duration for springdoc-openapi is: 584 ms
+2023-07-10 00:23:03,288 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 00:28:03,296 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 00:29:18,077 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 00:29:18,078 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 00:31:22,829 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:159 - [] Application shutdown requested.
+2023-07-10 00:31:22,846 INFO  EurekaServiceRegistry:62 - [] Unregistering application BOOK-TICKET with eureka with status DOWN
+2023-07-10 00:31:22,848 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1688929282848, current=DOWN, previous=UP]
+2023-07-10 00:31:22,850 INFO  DiscoveryClient:817 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200: registering service...
+2023-07-10 00:31:22,870 INFO  DiscoveryClient:826 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200 - registration status: 204
+2023-07-10 00:31:22,876 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2023-07-10 00:31:22,878 INFO  DirectJDKLog:173 - [] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-10 00:31:22,917 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...
+2023-07-10 09:41:04,108 INFO  StartupInfoLogger:51 - [] Starting BookTicketApplication using Java 17.0.6 with PID 24952 (G:\Online Railway Reservation System\Backend\BookTicket\target\classes started by Rohit in G:\Online Railway Reservation System\Backend\BookTicket)
+2023-07-10 09:41:04,140 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-07-10 09:41:04,208 INFO  DeferredLog:250 - [] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-10 09:41:04,209 INFO  DeferredLog:250 - [] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-10 09:41:05,146 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-10 09:41:05,293 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 142 ms. Found 2 MongoDB repository interfaces.
+2023-07-10 09:41:05,538 INFO  GenericScope:282 - [] BeanFactory id=357a0f79-1702-35bf-b79e-5bbe899d6382
+2023-07-10 09:41:05,588 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409 - [] Bean 'com.casestudy.client.TrainDetailProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-10 09:41:06,149 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8200 (http)
+2023-07-10 09:41:06,163 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-07-10 09:41:06,164 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-10 09:41:06,302 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-07-10 09:41:06,303 INFO  ServletWebServerApplicationContext:291 - [] Root WebApplicationContext: initialization completed in 2093 ms
+2023-07-10 09:41:06,638 WARN  OptionalLiveReloadServer:62 - [] Unable to start LiveReload server
+2023-07-10 09:41:06,912 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3a139f61, com.mongodb.Jep395RecordCodecProvider@2667dc54]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-07-10 09:41:06,929 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=28758300}
+2023-07-10 09:41:07,837 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-07-10 09:41:08,017 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-07-10 09:41:08,078 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-07-10 09:41:08,117 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-07-10 09:41:08,123 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 09:41:08,146 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-07-10 09:41:08,147 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-07-10 09:41:08,147 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-07-10 09:41:08,147 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-07-10 09:41:08,147 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-07-10 09:41:08,148 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-07-10 09:41:08,148 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-07-10 09:41:08,549 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-07-10 09:41:08,553 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-07-10 09:41:08,557 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-07-10 09:41:08,565 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1688962268565 with initial instances count: 2
+2023-07-10 09:41:08,568 INFO  EurekaServiceRegistry:41 - [] Registering application BOOK-TICKET with eureka with status UP
+2023-07-10 09:41:08,568 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1688962268568, current=UP, previous=STARTING]
+2023-07-10 09:41:08,570 INFO  DiscoveryClient:817 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200: registering service...
+2023-07-10 09:41:08,599 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8200 (http) with context path ''
+2023-07-10 09:41:08,601 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8200
+2023-07-10 09:41:08,623 INFO  DiscoveryClient:826 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200 - registration status: 204
+2023-07-10 09:41:08,756 INFO  StartupInfoLogger:57 - [] Started BookTicketApplication in 5.313 seconds (process running for 6.213)
+2023-07-10 09:41:39,750 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - [] Restarting due to 20 class path changes (0 additions, 4 deletions, 16 modifications)
+2023-07-10 09:41:39,753 INFO  EurekaServiceRegistry:62 - [] Unregistering application BOOK-TICKET with eureka with status DOWN
+2023-07-10 09:41:39,754 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1688962299754, current=DOWN, previous=UP]
+2023-07-10 09:41:39,754 INFO  DiscoveryClient:817 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200: registering service...
+2023-07-10 09:41:39,766 INFO  DiscoveryClient:826 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200 - registration status: 204
+2023-07-10 09:41:39,775 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2023-07-10 09:41:39,797 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...
+2023-07-10 09:41:42,802 INFO  DiscoveryClient:915 - [] Unregistering ...
+2023-07-10 09:41:42,820 INFO  DiscoveryClient:917 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200 - deregister  status: 200
+2023-07-10 09:41:42,835 INFO  DiscoveryClient:904 - [] Completed shut down of DiscoveryClient
+2023-07-10 09:41:43,169 INFO  StartupInfoLogger:51 - [] Starting BookTicketApplication using Java 17.0.6 with PID 24952 (G:\Online Railway Reservation System\Backend\BookTicket\target\classes started by Rohit in G:\Online Railway Reservation System\Backend\BookTicket)
+2023-07-10 09:41:43,170 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-07-10 09:41:43,429 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-10 09:41:43,440 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 10 ms. Found 2 MongoDB repository interfaces.
+2023-07-10 09:41:43,522 INFO  GenericScope:282 - [] BeanFactory id=357a0f79-1702-35bf-b79e-5bbe899d6382
+2023-07-10 09:41:43,529 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409 - [] Bean 'com.casestudy.client.TrainDetailProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-10 09:41:43,600 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8200 (http)
+2023-07-10 09:41:43,601 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-07-10 09:41:43,601 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-10 09:41:43,626 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-07-10 09:41:43,627 INFO  ServletWebServerApplicationContext:291 - [] Root WebApplicationContext: initialization completed in 455 ms
+2023-07-10 09:41:43,683 WARN  OptionalLiveReloadServer:62 - [] Unable to start LiveReload server
+2023-07-10 09:41:43,716 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3a139f61, com.mongodb.Jep395RecordCodecProvider@2667dc54]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-07-10 09:41:43,719 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2351800}
+2023-07-10 09:41:43,994 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-07-10 09:41:44,145 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-07-10 09:41:44,173 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-07-10 09:41:44,176 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-07-10 09:41:44,176 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 09:41:44,183 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-07-10 09:41:44,183 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-07-10 09:41:44,184 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-07-10 09:41:44,184 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-07-10 09:41:44,184 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-07-10 09:41:44,184 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-07-10 09:41:44,184 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-07-10 09:41:44,213 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-07-10 09:41:44,216 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-07-10 09:41:44,217 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-07-10 09:41:44,218 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1688962304218 with initial instances count: 3
+2023-07-10 09:41:44,220 INFO  EurekaServiceRegistry:41 - [] Registering application BOOK-TICKET with eureka with status UP
+2023-07-10 09:41:44,220 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1688962304220, current=UP, previous=STARTING]
+2023-07-10 09:41:44,221 INFO  DiscoveryClient:817 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200: registering service...
+2023-07-10 09:41:44,237 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8200 (http) with context path ''
+2023-07-10 09:41:44,238 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8200
+2023-07-10 09:41:44,244 INFO  DiscoveryClient:826 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200 - registration status: 204
+2023-07-10 09:41:44,367 INFO  StartupInfoLogger:57 - [] Started BookTicketApplication in 1.476 seconds (process running for 41.824)
+2023-07-10 09:41:44,370 INFO  ConditionEvaluationDeltaLoggingListener:63 - [] Condition evaluation unchanged
+2023-07-10 09:41:45,269 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - [] Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2023-07-10 09:41:45,270 INFO  EurekaServiceRegistry:62 - [] Unregistering application BOOK-TICKET with eureka with status DOWN
+2023-07-10 09:41:45,271 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1688962305271, current=DOWN, previous=UP]
+2023-07-10 09:41:45,272 INFO  DiscoveryClient:817 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200: registering service...
+2023-07-10 09:41:45,285 INFO  DiscoveryClient:826 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200 - registration status: 204
+2023-07-10 09:41:45,298 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2023-07-10 09:41:45,306 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...
+2023-07-10 09:41:48,310 INFO  DiscoveryClient:915 - [] Unregistering ...
+2023-07-10 09:41:48,326 INFO  DiscoveryClient:917 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200 - deregister  status: 200
+2023-07-10 09:41:48,338 INFO  DiscoveryClient:904 - [] Completed shut down of DiscoveryClient
+2023-07-10 09:41:48,599 INFO  StartupInfoLogger:51 - [] Starting BookTicketApplication using Java 17.0.6 with PID 24952 (G:\Online Railway Reservation System\Backend\BookTicket\target\classes started by Rohit in G:\Online Railway Reservation System\Backend\BookTicket)
+2023-07-10 09:41:48,600 INFO  SpringApplication:633 - [] No active profile set, falling back to 1 default profile: "default"
+2023-07-10 09:41:48,840 INFO  RepositoryConfigurationDelegate:138 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-10 09:41:48,853 INFO  RepositoryConfigurationDelegate:208 - [] Finished Spring Data repository scanning in 13 ms. Found 2 MongoDB repository interfaces.
+2023-07-10 09:41:48,944 INFO  GenericScope:282 - [] BeanFactory id=357a0f79-1702-35bf-b79e-5bbe899d6382
+2023-07-10 09:41:48,953 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409 - [] Bean 'com.casestudy.client.TrainDetailProxy' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-10 09:41:49,034 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8200 (http)
+2023-07-10 09:41:49,035 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-07-10 09:41:49,036 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-10 09:41:49,076 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-07-10 09:41:49,076 INFO  ServletWebServerApplicationContext:291 - [] Root WebApplicationContext: initialization completed in 474 ms
+2023-07-10 09:41:49,142 WARN  OptionalLiveReloadServer:62 - [] Unable to start LiveReload server
+2023-07-10 09:41:49,175 INFO  SLF4JLogger:71 - [] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.6+10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3a139f61, com.mongodb.Jep395RecordCodecProvider@2667dc54]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-07-10 09:41:49,178 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2457100}
+2023-07-10 09:41:49,429 INFO  DiscoveryClientOptionalArgsConfiguration:74 - [] Eureka HTTP Client uses RestTemplate.
+2023-07-10 09:41:49,570 WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94 - [] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-07-10 09:41:49,588 INFO  InstanceInfoFactory:67 - [] Setting initial instance status as: STARTING
+2023-07-10 09:41:49,590 INFO  DiscoveryClient:327 - [] Initializing Eureka in region us-east-1
+2023-07-10 09:41:49,591 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 09:41:49,592 INFO  DiscoveryClient:951 - [] Disable delta property : false
+2023-07-10 09:41:49,593 INFO  DiscoveryClient:952 - [] Single vip registry refresh property : null
+2023-07-10 09:41:49,593 INFO  DiscoveryClient:953 - [] Force full registry fetch : false
+2023-07-10 09:41:49,593 INFO  DiscoveryClient:954 - [] Application is null : false
+2023-07-10 09:41:49,594 INFO  DiscoveryClient:955 - [] Registered Applications size is zero : true
+2023-07-10 09:41:49,594 INFO  DiscoveryClient:957 - [] Application version is -1: true
+2023-07-10 09:41:49,594 INFO  DiscoveryClient:1041 - [] Getting all instance registry info from the eureka server
+2023-07-10 09:41:49,616 INFO  DiscoveryClient:1050 - [] The response status is 200
+2023-07-10 09:41:49,617 INFO  DiscoveryClient:1265 - [] Starting heartbeat executor: renew interval is: 30
+2023-07-10 09:41:49,618 INFO  InstanceInfoReplicator:60 - [] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-07-10 09:41:49,620 INFO  DiscoveryClient:447 - [] Discovery Client initialized at timestamp 1688962309620 with initial instances count: 3
+2023-07-10 09:41:49,621 INFO  EurekaServiceRegistry:41 - [] Registering application BOOK-TICKET with eureka with status UP
+2023-07-10 09:41:49,621 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1688962309621, current=UP, previous=STARTING]
+2023-07-10 09:41:49,622 INFO  DiscoveryClient:817 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200: registering service...
+2023-07-10 09:41:49,634 INFO  DiscoveryClient:826 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200 - registration status: 204
+2023-07-10 09:41:49,634 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8200 (http) with context path ''
+2023-07-10 09:41:49,635 INFO  EurekaAutoServiceRegistration:144 - [] Updating port to 8200
+2023-07-10 09:41:49,767 INFO  StartupInfoLogger:57 - [] Started BookTicketApplication in 1.382 seconds (process running for 47.224)
+2023-07-10 09:41:49,769 INFO  ConditionEvaluationDeltaLoggingListener:63 - [] Condition evaluation unchanged
+2023-07-10 09:43:51,346 INFO  DirectJDKLog:173 - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-10 09:43:51,347 INFO  FrameworkServlet:532 - [] Initializing Servlet 'dispatcherServlet'
+2023-07-10 09:43:51,351 INFO  FrameworkServlet:554 - [] Completed initialization in 3 ms
+2023-07-10 09:43:51,816 INFO  AbstractOpenApiResource:371 - [] Init duration for springdoc-openapi is: 318 ms
+2023-07-10 09:44:37,081 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 09:44:37,081 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 09:46:49,597 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 09:50:50,018 INFO  BookingController:69 - [] [bookSlTicket] Method called
+2023-07-10 09:50:50,019 DEBUG BookingController:70 - [] [bookSlTicket] Method called
+2023-07-10 09:50:51,555 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 09:50:51,555 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 09:51:33,492 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 09:51:33,493 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 09:51:39,122 INFO  BookingController:95 - [] [cancelSlTicket] Method called
+2023-07-10 09:51:39,123 DEBUG BookingController:96 - [] [cancelSlTicket] Method called
+2023-07-10 09:51:39,719 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 09:51:39,719 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 09:51:49,612 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 09:56:49,621 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:01:49,626 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:06:49,636 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:11:49,638 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:16:49,650 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:21:49,651 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:26:49,662 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:31:49,666 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:36:49,667 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:41:49,682 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:41:49,695 INFO  BookingController:69 - [] [bookSlTicket] Method called
+2023-07-10 10:41:49,699 DEBUG BookingController:70 - [] [bookSlTicket] Method called
+2023-07-10 10:41:49,843 INFO  BookingController:69 - [] [bookSlTicket] Method called
+2023-07-10 10:41:49,844 DEBUG BookingController:70 - [] [bookSlTicket] Method called
+2023-07-10 10:41:54,423 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 10:41:54,424 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 10:42:26,904 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 10:42:26,905 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 10:42:44,223 INFO  BookingController:121 - [] [getMyPnrStatus] Method called
+2023-07-10 10:42:44,224 DEBUG BookingController:122 - [] [getMyPnrStatus] Method called
+2023-07-10 10:42:57,262 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 10:42:57,262 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 10:43:28,735 INFO  BookingController:95 - [] [cancelSlTicket] Method called
+2023-07-10 10:43:28,738 DEBUG BookingController:96 - [] [cancelSlTicket] Method called
+2023-07-10 10:43:30,030 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 10:43:30,030 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 10:46:49,686 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:48:32,355 INFO  BookingController:121 - [] [getMyPnrStatus] Method called
+2023-07-10 10:48:32,355 DEBUG BookingController:122 - [] [getMyPnrStatus] Method called
+2023-07-10 10:51:49,699 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 10:56:49,701 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:01:49,721 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:06:49,739 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:11:49,744 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:16:49,750 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:21:49,765 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:26:49,780 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:31:49,796 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:36:49,806 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:41:49,819 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:44:20,960 INFO  BookingController:69 - [] [bookSlTicket] Method called
+2023-07-10 11:44:20,971 DEBUG BookingController:70 - [] [bookSlTicket] Method called
+2023-07-10 11:44:23,010 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 11:44:23,013 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 11:44:59,961 INFO  BookingController:95 - [] [cancelSlTicket] Method called
+2023-07-10 11:44:59,963 DEBUG BookingController:96 - [] [cancelSlTicket] Method called
+2023-07-10 11:45:01,388 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 11:45:01,390 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 11:45:09,933 INFO  BookingController:121 - [] [getMyPnrStatus] Method called
+2023-07-10 11:45:09,934 DEBUG BookingController:122 - [] [getMyPnrStatus] Method called
+2023-07-10 11:46:49,863 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:51:49,869 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:53:11,853 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 11:53:11,854 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 11:56:49,882 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 11:57:05,705 INFO  BookingController:69 - [] [bookSlTicket] Method called
+2023-07-10 11:57:05,705 DEBUG BookingController:70 - [] [bookSlTicket] Method called
+2023-07-10 11:57:09,989 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 11:57:09,990 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 11:57:52,873 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 11:57:52,873 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 11:58:04,625 INFO  BookingController:95 - [] [cancelSlTicket] Method called
+2023-07-10 11:58:04,629 DEBUG BookingController:96 - [] [cancelSlTicket] Method called
+2023-07-10 11:58:05,862 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 11:58:05,863 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 11:58:36,871 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 11:58:36,872 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 11:58:47,333 INFO  BookingController:121 - [] [getMyPnrStatus] Method called
+2023-07-10 11:58:47,334 DEBUG BookingController:122 - [] [getMyPnrStatus] Method called
+2023-07-10 12:01:49,887 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:02:55,634 INFO  BookingController:108 - [] [getMyTickets] Method called
+2023-07-10 12:02:55,635 DEBUG BookingController:109 - [] [getMyTickets] Method called
+2023-07-10 12:06:49,900 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:11:49,918 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:16:49,927 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:21:49,939 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:26:49,949 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:31:49,952 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:36:49,956 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:41:49,962 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:46:49,974 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:51:49,983 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2023-07-10 12:55:34,688 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:159 - [] Application shutdown requested.
+2023-07-10 12:55:34,738 INFO  EurekaServiceRegistry:62 - [] Unregistering application BOOK-TICKET with eureka with status DOWN
+2023-07-10 12:55:34,741 INFO  DiscoveryClient$3:1296 - [] Saw local status change event StatusChangeEvent [timestamp=1688973934741, current=DOWN, previous=UP]
+2023-07-10 12:55:34,743 INFO  DiscoveryClient:817 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200: registering service...
+2023-07-10 12:55:34,766 INFO  DiscoveryClient:826 - [] DiscoveryClient_BOOK-TICKET/DESKTOP-2NG49C4:BOOK-TICKET:8200 - registration status: 204
+2023-07-10 12:55:34,800 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2023-07-10 12:55:34,810 INFO  DirectJDKLog:173 - [] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-10 12:55:34,861 INFO  DiscoveryClient:879 - [] Shutting down DiscoveryClient ...

@@ -38,6 +38,7 @@ public class TrainServiceImpl implements TrainService{
 	@Override
 	public TrainDetail addTrain(TrainDetail train) {
 		Optional<TrainDetail> findedTrain = trainDetailRepo.findById(train.getTrainId());
+//		System.out.println(findedTrain.get());
 		if(findedTrain.isPresent()) {
 			throw new TrainNotFoundException("Train Already Exist " , "Train Id " , train.getTrainId() );
 		}
@@ -61,13 +62,16 @@ public class TrainServiceImpl implements TrainService{
 		station.setTrainId(train.getTrainId());
 		station.setTrainFrom(stations.get(source));
 		station.setTrainTo(stations.get(dest));
+		station.setDepartureTime("8:00 AM");
+		station.setArrivalTime("9:00 PM");
+		station.setJourneyFare(0);
 		stationRepo.save(station);
 	}
 
 
 	@Override
 	public TrainJourney addTrainJourney(final int trainId,final Date date) {
-		TrainDetail trainDetail = trainDetailRepo.findById(trainId).orElse(null);
+		TrainDetail trainDetail = trainDetailRepo.findById(trainId).orElseThrow(()-> new TrainNotFoundException("Train not found " , "Train number " , trainId) );
 		List<TrainJourney> trainJournies = trainJourneyRepo.findByTrainDate(date);
 		for(TrainJourney existJourney:trainJournies) {
 			if(existJourney.getTrainId() == trainId) {
@@ -118,44 +122,46 @@ public class TrainServiceImpl implements TrainService{
 	@Override
 	public List<Train> searchTrain(String from, String to, Date date) {
 		List<TrainStation> stationList = stationRepo.findByTrainFromAndTrainTo(from, to);
-		
+		System.out.println(stationList);
 		List<Train> searchedTrains = new ArrayList<>();
 		
 		for(TrainStation station : stationList) {
 			int trainId = station.getTrainId();
 			
-			TrainJourney trainInfo = trainJourneyRepo.findByTrainId(trainId);
-			TrainDetail trainDetail = trainInfo.getTrainDetail();
-			
-			Date trainDate = trainInfo.getTrainDate();
-			trainDate.setHours(0);
-			trainDate.setMinutes(0);
-			date.setHours(0);
-			date.setMinutes(0);
-			if(trainDate.equals(date)) {
-				Train train = new Train();
+			List<TrainJourney> trainInfoList = trainJourneyRepo.findByTrainId(trainId);
+			for(TrainJourney trainInfo:trainInfoList) {
+				TrainDetail trainDetail = trainInfo.getTrainDetail();
 				
-				int stationFare = station.getJourneyFare();
-				int journeyFareAC = stationFare + trainDetail.getFareAC();
-				int journeyFareSL = stationFare + trainDetail.getFareSL();
-				
-				train.setTrainNo(trainInfo.getTrainNo());
-				train.setTrainId(trainId);
-				train.setTrainName(trainDetail.getTrainName());
-				train.setTrainStart(trainDetail.getTrainStart());
-				train.setTrainEnd(trainDetail.getTrainEnd());
-				train.setAvailableAC(trainInfo.getSeatsAC());
-				train.setAvailableSL(trainInfo.getSeatsSL());
-				train.setFareAC(journeyFareAC);
-				train.setFareSL(journeyFareSL);
-				train.setStations(trainDetail.getStations());
-				train.setDepartureTime(station.getDepartureTime());
-				train.setArrivalTime(station.getArrivalTime());
-				train.setWaitingAC(trainInfo.getWaitingAC());
-				train.setWaitingSL(trainInfo.getWaitingSL());
-				train.setDepartureTime(station.getDepartureTime());
-				train.setArrivalTime(station.getArrivalTime());
-				searchedTrains.add(train);
+				Date trainDate = trainInfo.getTrainDate();
+				trainDate.setHours(0);
+				trainDate.setMinutes(0);
+				date.setHours(0);
+				date.setMinutes(0);
+				if(trainDate.equals(date)) {
+					Train train = new Train();
+					
+					int stationFare = station.getJourneyFare();
+					int journeyFareAC = stationFare + trainDetail.getFareAC();
+					int journeyFareSL = stationFare + trainDetail.getFareSL();
+					
+					train.setTrainNo(trainInfo.getTrainNo());
+					train.setTrainId(trainId);
+					train.setTrainName(trainDetail.getTrainName());
+					train.setTrainStart(trainDetail.getTrainStart());
+					train.setTrainEnd(trainDetail.getTrainEnd());
+					train.setAvailableAC(trainInfo.getSeatsAC());
+					train.setAvailableSL(trainInfo.getSeatsSL());
+					train.setFareAC(journeyFareAC);
+					train.setFareSL(journeyFareSL);
+					train.setStations(trainDetail.getStations());
+					train.setDepartureTime(station.getDepartureTime());
+					train.setArrivalTime(station.getArrivalTime());
+					train.setWaitingAC(trainInfo.getWaitingAC());
+					train.setWaitingSL(trainInfo.getWaitingSL());
+					train.setDepartureTime(station.getDepartureTime());
+					train.setArrivalTime(station.getArrivalTime());
+					searchedTrains.add(train);
+				}
 			}
 		}
 		
@@ -230,6 +236,12 @@ public class TrainServiceImpl implements TrainService{
 		}
 		
 	}
+	
+	@Override
+	public TrainStation updateStation(TrainStation station) {
+		return stationRepo.save(station);
+	}
+
 
 	@Override
 	public List<String> getAllStations() {
@@ -247,7 +259,29 @@ public class TrainServiceImpl implements TrainService{
 		return listOfStations;
 	}
 
+	@Override
+	public List<TrainStation> getStationInfo(Integer trainId) {
+		return stationRepo.findByTrainId(trainId);
+	}
 
+	@Override
+	public void cancelAcTicket(int trainNo) {
+		TrainJourney info = trainJourneyRepo.findById(trainNo).orElseThrow(()-> new TrainNotFoundException("Train not found " , "Train number " , trainNo) );
+		int acSeats = info.getSeatsAC();
+		acSeats = acSeats + 1;
+		info.setSeatsAC(acSeats);
+		trainJourneyRepo.save(info);
+	}
+
+
+	@Override
+	public void cancelSlTicket(int trainNo) {
+		TrainJourney info = trainJourneyRepo.findById(trainNo).orElseThrow(()-> new TrainNotFoundException("Train not found " , "Train number " , trainNo) );
+		int slSeats = info.getSeatsSL();
+		slSeats = slSeats + 1;
+		info.setSeatsSL(slSeats);
+		trainJourneyRepo.save(info);
+	}
 
 
 

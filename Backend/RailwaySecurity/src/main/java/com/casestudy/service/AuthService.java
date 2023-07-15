@@ -25,7 +25,7 @@ public class AuthService {
 	@Autowired
 	private JwtService jwtService;
 	
-	public String saveUser(UserData userData) {
+	public UserData saveUser(UserData userData) {
 		Optional<UserData> user = userRepo.findByEmail(userData.getEmail());
 		if(user.isPresent()) {
 			throw new UserexistException("User already exist with Email id ", userData.getEmail());
@@ -38,8 +38,8 @@ public class AuthService {
 		}else {
 			userData.setRole("admin");
 		}
-		userRepo.save(userData);
-		return "User added sucessfully";
+		return userRepo.save(userData);
+//		return "User added sucessfully";
 		
 	}
 	

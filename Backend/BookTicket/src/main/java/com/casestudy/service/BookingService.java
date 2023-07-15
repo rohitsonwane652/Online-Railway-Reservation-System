@@ -11,4 +11,8 @@ public interface BookingService {
 	TrainTicket bookAcTicket(PassengerInfo passenger);
 	TrainTicket bookSlTicket(PassengerInfo passenger);
 	List<TrainTicket> getMyTickets(@RequestParam String userEmail);
+	TrainTicket getPnrStatus(int pnrNo);
+	void sendEmail(String to, String subject, String message);
+	void cancelAcTicket(int pnrNo);
+	void cancelSlTicket(int pnrNo);
 }

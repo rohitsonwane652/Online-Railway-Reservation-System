@@ -13,7 +13,6 @@ public class TrainDetail {
 	private String trainStart;
 	private String trainEnd;
 	
-	private int totalSeats;
 	private int capacityAC;
 	private int capacitySL;
 	private int fareSL;
@@ -53,13 +52,6 @@ public class TrainDetail {
 		this.trainEnd = trainEnd;
 	}
 
-	public int getTotalSeats() {
-		return totalSeats;
-	}
-
-	public void setTotalSeats(int totalSeats) {
-		this.totalSeats = totalSeats;
-	}
 
 	public int getCapacityAC() {
 		return capacityAC;
@@ -101,14 +93,13 @@ public class TrainDetail {
 		this.stations = stations;
 	}
 
-	public TrainDetail(Integer trainId, String trainName, String trainStart, String trainEnd, int totalSeats,
+	public TrainDetail(Integer trainId, String trainName, String trainStart, String trainEnd,
 			int capacityAC, int capacitySL, int fareSL, int fareAC, List<String> stations) {
 		super();
 		this.trainId = trainId;
 		this.trainName = trainName;
 		this.trainStart = trainStart;
 		this.trainEnd = trainEnd;
-		this.totalSeats = totalSeats;
 		this.capacityAC = capacityAC;
 		this.capacitySL = capacitySL;
 		this.fareSL = fareSL;
@@ -120,6 +111,15 @@ public class TrainDetail {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
+	@Override
+	public String toString() {
+		return "TrainDetail [trainId=" + trainId + ", trainName=" + trainName + ", trainStart=" + trainStart
+				+ ", trainEnd=" + trainEnd + ", capacityAC=" + capacityAC
+				+ ", capacitySL=" + capacitySL + ", fareSL=" + fareSL + ", fareAC=" + fareAC + ", stations=" + stations
+				+ "]";
+	}
+	
 	
 	
 }

@@ -20,4 +20,10 @@ public interface TrainDetailProxy {
 	
 	@PutMapping("/train/updateSlSeat/{trainNo}/{status}")
 	public void updateSlSeat(@PathVariable int trainNo,@PathVariable String status);
+	
+	@PutMapping("/train/cancelacseat/{trainNo}")
+	public void cancelAcTicket(@PathVariable int trainNo);
+	
+	@PutMapping("/train/cancelslseat/{trainNo}")
+	public void cancelSlTicket(@PathVariable int trainNo);
 }
